@@ -2,7 +2,7 @@
 
 A comprehensive football player profile website inspired by Transfermarkt, featuring Şevval Çabuk's professional information, skills, and career details.
 
-🌐 **Live Website:** [https://sevvalpisburuncabuk.github.io](https://sevvalpisburuncabuk.github.io)
+🌐 **Live Website:** [https://Festus26.github.io/sevvalpisburuncabuk.github.io](https://Festus26.github.io/sevvalpisburuncabuk.github.io)
 
 ## 📋 Features
 
@@ -40,7 +40,7 @@ A comprehensive football player profile website inspired by Transfermarkt, featu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sevvalpisburuncabuk/sevvalpisburuncabuk.github.io.git
+   git clone https://github.com/Festus26/sevvalpisburuncabuk.github.io.git
    ```
 
 2. Open `index.html` in your browser or use a local server
