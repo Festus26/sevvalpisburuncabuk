@@ -1,202 +1,95 @@
-# Transfermarkt Player Profile
+# Şevval Çabuk - Player Profile
 
-A complete replica of Transfermarkt's player profile page, featuring all the sections and functionality found on the original site. This is a client-side only implementation that's easy to customize and edit.
+A comprehensive football player profile website inspired by Transfermarkt, featuring Şevval Çabuk's professional information, skills, and career details.
 
-## Features
+🌐 **Live Website:** [https://sevvalpisburuncabuk.github.io](https://sevvalpisburuncabuk.github.io)
 
-### Complete Player Profile Sections
-- **Player Header** - Player name, number, and current club
-- **Player Information** - Comprehensive details including:
-  - Personal information (birth date, place, nationality, height)
-  - Position and playing style
-  - Contract details
-  - Agent information
-  - Social media links
-- **Market Value** - Current valuation with historical chart
-- **Youth Career** - Early career information
-- **Performance Data** - Season-by-season statistics
-- **National Team Performance** - All national team levels and statistics
-- **Achievements & Honors** - Trophies and awards
+## 📋 Features
+
+- **Professional Player Profile** - Complete player information and statistics
+- **Skills & Expertise** - Interactive skill bars showing technical abilities
+- **Professional Experience** - Career timeline with detailed descriptions
+- **Achievements** - Trophies and honors
 - **Player Comparison** - Interactive voting system
-- **Market Value Chart** - Interactive Chart.js visualization
+- **Market Value Chart** - Visual representation using Chart.js
+- **Responsive Design** - Works perfectly on all devices
+- **LinkedIn-Style Professional Layout** - Modern and clean interface
 
-### Interactive Features
-- **Responsive Design** - Works on all devices
-- **Interactive Charts** - Market value progression over time
-- **Voting System** - Player comparison with vote tracking
-- **Hover Effects** - Enhanced user experience
-- **Smooth Animations** - Professional transitions and effects
+## 🛠 Technologies Used
 
-## Quick Start
+- **HTML5** - Semantic structure
+- **CSS3** - Modern styling with Grid and Flexbox
+- **JavaScript** - Interactive functionality
+- **Chart.js** - Market value visualization
+- **Font Awesome** - Professional icons
+- **Responsive Design** - Mobile-first approach
 
-1. **Open the project:**
+## 🎯 Sections
+
+1. **Player Header** - Name, number, and club
+2. **Player Information** - Personal details and position
+3. **Skills & Expertise** - Technical abilities and languages
+4. **Professional Experience** - Career timeline
+5. **Achievements** - Trophies and honors
+6. **Player Comparison** - Interactive voting
+7. **Market Value Chart** - Growth visualization
+8. **Youth Career** - Academy background
+9. **Education** - Professional development
+
+## 🚀 Quick Start
+
+1. Clone the repository:
    ```bash
-   cd /Users/semih/Documents/Projects/TransfermarktProfile
+   git clone https://github.com/sevvalpisburuncabuk/sevvalpisburuncabuk.github.io.git
    ```
 
-2. **Open in browser:**
-   - Double-click `index.html` or
-   - Use a local server for best experience
+2. Open `index.html` in your browser or use a local server
 
-3. **Customize the player:**
-   - Edit player data in `script.js`
-   - Modify styles in `styles.css`
-   - Update content in `index.html`
+3. Customize the player data in `script.js`
 
-## Easy Editing Guide
+## 📱 Responsive Design
+
+The website is fully responsive and optimized for:
+- Desktop computers
+- Tablets
+- Mobile phones
+- Print media
+
+## 🎨 Customization
 
 ### Changing Player Information
-
-#### Method 1: Edit JavaScript Data Object
-Open `script.js` and modify the `playerData` object:
+Edit the `playerData` object in `script.js`:
 
 ```javascript
 const playerData = {
-    name: "Your Player Name",
+    name: "Player Name",
     number: 10,
-    club: "Your Club",
-    nationality: ["Country1", "Country2"],
-    birthDate: "DD MMM YYYY",
-    age: 25,
-    marketValue: "50.00 mil. €",
-    // ... add more fields
+    club: "Club Name",
+    // ... more fields
 };
 ```
 
-#### Method 2: Use Edit Mode
-Add `#edit` to the URL (e.g., `index.html#edit`) to enable the visual editor.
+### Styling
+Modify `styles.css` to customize:
+- Colors and themes
+- Layout and spacing
+- Responsive breakpoints
+- Animations and effects
 
-### Updating Performance Data
-In `script.js`, modify the `performanceData` array:
-
-```javascript
-const performanceData = [
-    { season: "24/25", club: "Club Name", league: "League", matches: 30, goals: 10, assists: 8 },
-    // Add more seasons...
-];
+### Adding Images
+Place images in the `images/` folder and reference them:
+```html
+<img src="images/your-image.jpg" alt="Description">
 ```
 
-### Customizing National Team Data
-Edit the `nationalTeamData` array in `script.js`:
+## 📄 License
 
-```javascript
-const nationalTeamData = [
-    { team: "Country", debut: "DD MMM YYYY", caps: 50, goals: 10 },
-    // Add more national teams...
-];
-```
+This project is open source and available under the [MIT License](LICENSE).
 
-### Styling Customization
-Key CSS variables and sections in `styles.css`:
+## 🤝 Contributing
 
-```css
-/* Main Colors */
-.header { background-color: #00b2ff; } /* Transfermarkt blue */
-.player-header { background: linear-gradient(135deg, #1b3251 0%, #2a4a6b 100%); }
+Feel free to submit issues and enhancement requests!
 
-/* Responsive breakpoints */
-@media (max-width: 768px) { /* Tablet styles */ }
-@media (max-width: 480px) { /* Mobile styles */ }
-```
+---
 
-## File Structure
-
-```
-TransfermarktProfile/
-├── index.html          # Main HTML structure
-├── styles.css          # All styling and responsive design
-├── script.js           # Interactive functionality and data
-└── README.md           # This documentation
-```
-
-## Key Components
-
-### HTML Structure
-- Semantic HTML5 structure
-- Modular sections for easy editing
-- Accessibility-friendly markup
-- CDN-linked Font Awesome icons
-
-### CSS Features
-- CSS Grid and Flexbox for layouts
-- Mobile-first responsive design
-- CSS animations and transitions
-- Print-friendly styles
-- Custom properties for easy theming
-
-### JavaScript Functionality
-- Chart.js integration for market value visualization
-- Interactive voting system
-- Dynamic data updates
-- Smooth scrolling and animations
-- Easy-to-use update functions
-
-## Customization Examples
-
-### Adding a New Achievement
-```javascript
-// In script.js, add to achievements section in HTML:
-<div class="achievement-item">
-    <i class="fas fa-trophy"></i>
-    <span>Your New Achievement</span>
-</div>
-```
-
-### Changing Team Colors
-```css
-/* In styles.css */
-:root {
-    --primary-color: #your-color;
-    --secondary-color: #your-secondary-color;
-}
-```
-
-### Adding Social Media Links
-```javascript
-// In playerData object:
-socialMedia: {
-    twitter: "https://twitter.com/username",
-    instagram: "https://instagram.com/username",
-    // Add more platforms
-}
-```
-
-## Browser Compatibility
-
-- **Modern Browsers:** Full feature support
-- **Internet Explorer 11+:** Basic functionality
-- **Mobile Browsers:** Optimized responsive experience
-
-## Dependencies
-
-- **Chart.js** - For market value visualization (loaded via CDN)
-- **Font Awesome** - For icons (loaded via CDN)
-- **No build process required** - Pure HTML/CSS/JS
-
-## Development Tips
-
-1. **Use browser dev tools** to inspect and modify styles in real-time
-2. **Console methods available:**
-   ```javascript
-   PlayerProfile.updatePlayerData({name: "New Name"})
-   PlayerProfile.calculateCareerStats()
-   ```
-3. **Enable edit mode** by adding `#edit` to URL for visual editing
-4. **All images use external URLs** for easy deployment
-
-## Performance Features
-
-- **Optimized images** - Proper sizing and compression
-- **Minimal external dependencies** - Only Chart.js and Font Awesome
-- **Efficient CSS** - Minimal reflows and repaints
-- **Lazy loading ready** - Structure supports progressive enhancement
-
-## Accessibility
-
-- **ARIA labels** where needed
-- **Keyboard navigation** support
-- **Screen reader friendly** markup
-- **High contrast** color combinations
-- **Scalable text** and responsive design
-
-This implementation provides a complete, professional-looking player profile that's easy to customize for any player while maintaining the authentic Transfermarkt look and feel.
+**Created with ❤️ for football and professional development**
